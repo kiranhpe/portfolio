@@ -14,6 +14,7 @@
     height: auto;
 }
 
+
 .header {
     display: flex;
     flex-direction: row;
@@ -92,6 +93,63 @@
     }
 }
 
+.about {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+
+}
+
+.contact {
+    margin-top: 68px;
+    padding-bottom: 20px;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        li {
+            position: relative;
+            div {
+                width: 50px;
+                height: 50px;
+                background: $color-black-2;
+                left:50%;
+                top:-60px;
+                position: absolute;
+                transform: translateX(-50%);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    font-size: 32px;
+                }
+            }
+            a {
+                font-size: 18px;
+                font-weight: 400;
+                position: relative;
+                text-decoration: none;
+             }
+             .type {
+                font-weight: 700;   
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -104,8 +162,9 @@
       padding: 12px 34px;
       font-size: 14px;
       font-weight: 500;
-  }
 
-  .btn:hover {
-      cursor: pointer;
+      &:hover {
+        cursor: pointer;
+
+      }
   }
