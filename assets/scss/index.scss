@@ -1,0 +1,44 @@
+@import '_variables';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background: $color-gray-5;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    .brand {
+        font-size: $font-heading-2;
+        font-weight: $font-weight-extra-bold;
+        letter-spacing: 2;
+    }
+    .menu {
+        margin-left: auto;
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                margin-left: 20px;
+                font-size: $font-heading-3;
+                font-weight: $font-weight-bold;
+                letter-spacing: 1;
+            }
+        }
+    }
+    
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
