@@ -8,6 +8,10 @@
     color: $color-white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     padding: 0px;
     background: $color-black;
@@ -163,6 +167,40 @@
     }
 }
 
+.services {
+    display: grid;
+    place-items:center ;
+    width: 100%;
+    margin-top: 50px;
+   h2 {
+       font-size: 48px;
+   }
+
+   .service-types {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;      
+       padding: 50px;
+       width: 100%;
+       .service {
+           padding: 50px ;
+           height: 241px;
+           width: 350px;
+           position: relative;
+           background: #212121;
+           border-bottom: 3px solid $color-green;
+           p {
+               font-size: $font-heading-1;
+               position: absolute;
+               bottom: 36px;
+               color: $color-light-gray;
+               font-weight: 700;
+           }
+
+       }
+   }
+}
+
 
 .sticky {
     position: fixed;
@@ -227,6 +265,22 @@
                 margin-bottom: 20px;
                 p, a {
                     display: none;
+                }
+            }
+        }
+    }
+
+    .services {
+        .service-types {
+            flex-direction: column;
+            .service {
+                margin-bottom: 50px;
+                width: 95%;
+                height: 120px;
+                padding: 20px;
+                p {
+                    bottom: 20px;
+                    font-size: $font-heading-3;
                 }
             }
         }
