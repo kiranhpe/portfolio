@@ -189,12 +189,21 @@ html {
            position: relative;
            background: #212121;
            border-bottom: 3px solid $color-green;
+
+           span {
+               color: $color-green;
+           }
            p {
                font-size: $font-heading-1;
                position: absolute;
                bottom: 36px;
                color: $color-light-gray;
                font-weight: 700;
+           }
+
+           &:hover {
+              filter: brightness(2);
+              cursor: pointer;
            }
 
        }
