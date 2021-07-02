@@ -406,6 +406,9 @@ html {
                 width: 95%;
                 height: 120px;
                 padding: 20px;
+                .fa-3x {
+                    font-size: 20px;
+                }
                 p {
                     bottom: 20px;
                     font-size: $font-heading-3;
