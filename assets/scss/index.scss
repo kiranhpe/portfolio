@@ -193,7 +193,7 @@ html {
            height: 241px;
            width: 350px;
            position: relative;
-           background: #212121;
+           background: $color-black-2;
            border-bottom: 3px solid $color-green;
 
            span {
@@ -234,7 +234,7 @@ html {
             border-radius: $radius;
   }
   .skill-container {
-      background: #212121;
+      background: $color-black-2;
       width: 100%;
       margin-top: 50px;
   }
@@ -378,7 +378,7 @@ html {
             position: relative;
             text-align: right;
             .timeline-content {
-                background: #212121;
+                background: $color-black-2;
                 padding: 20px 10px;
                 border-radius: 5px;
                 .date {
@@ -404,7 +404,7 @@ html {
               content: '';
               width: 15px;
               height: 15px;
-              background: #212121;
+              background: $color-black-2;
               right: -5px;
               top:20%;
               transform: translateY(-50%);
@@ -420,7 +420,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: black;
+    background-color: $color-black-2;
     z-index: 999;
   }
 
