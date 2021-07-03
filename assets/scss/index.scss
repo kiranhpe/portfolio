@@ -497,27 +497,29 @@ html {
             height: 70%;
             left: 50%;
             top: 110px;
-        };
-
-        li {
-            width: 100%;
-            margin: auto;
-            text-align: center !important;
-            h1 {
-                font-size: $font-heading-2;
-            }
-            &::before {
-                display: none;
-            }
-           
-            &:nth-child(even) {
+        }
+        ul {
+            li {
+                width: 100%;
+                margin: 50px auto;
                 text-align: center !important;
-                .date {
-                    left: 0;
-                    text-align: left;
+                h1 {
+                    font-size: $font-heading-2;
+                }
+                &::before {
+                    display: none;
+                }
+               
+                &:nth-child(even) {
+                    text-align: center !important;
+                    .date {
+                        left: 0;
+                        text-align: left;
+                    }
                 }
             }
         }
+       
     }
   }
 
