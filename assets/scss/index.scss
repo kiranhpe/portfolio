@@ -127,7 +127,6 @@ html {
 }
 
 .contact {
-    margin-top: 68px;
     padding-bottom: 20px;
     h2 {
         font-size: 48px;
@@ -168,7 +167,6 @@ html {
     display: grid;
     place-items:center ;
     width: 100%;
-    margin-top: 50px;
    h2 {
        font-size: 48px;
    }
@@ -213,7 +211,6 @@ html {
     flex-direction: column;
     text-align: center;
     width: 100%;
-    margin-top: 50px;
     h2 {
         font-size: 48px;
     }
@@ -517,6 +514,11 @@ html {
         }
        
     }
+
+    .freebirdFormviewerViewItemList {
+        display: flex !important;
+       flex-direction: column !important;
+    }
   }
 
 
@@ -556,4 +558,71 @@ html {
 
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(0, 0, 0, 0.4); 
+}
+
+
+
+.freebirdFormviewerViewNoPadding, .freebirdFormviewerViewFooterEmbeddedBackground {
+    display: none !important;
+}
+
+.freebirdFormviewerViewItemList {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+.freebirdFormviewerViewNumberedItemContainer:nth-child(3) {
+    grid-column: 1 / span 2;
+}
+
+.freebirdFormviewerViewCenteredContent {
+    width: 100% !important;
+}
+
+.quantumWizTextinputPaperinputPlaceholder,.quantumWizTextinputPapertextareaPlaceholder {
+    display: none;
+}
+
+.freebirdFormviewerComponentsQuestionBaseRoot {
+    background: $color-black !important;
+    color: $color-white !important;
+}
+
+.freebirdFormviewerComponentsQuestionBaseTitle {
+    color: $color-white !important;
+}
+
+.freebirdFormviewerComponentsQuestionTextRoot {
+    background: $color-black-2;
+}
+
+
+.quantumWizTextinputPaperinputInputArea {
+    input {
+        color: $color-white !important;
+        width: 100%;
+    }
+}
+
+.quantumWizTextinputPapertextareaContentArea {
+    textarea {
+        color: $color-white !important;
+    }
+}
+
+.freebirdFormviewerComponentsQuestionBaseRoot {
+    border: none !important;
+    padding: 0px !important;
+}
+.freebirdFormviewerViewNavigationLeftButtons {
+    display: flex !important;
+    justify-content: center;
+}
+.freebirdThemedFilledButtonM2,.freebirdFormviewerViewNavigationSubmitButton {
+    background: $color-black-2 !important;
+}
+
+.freebirdFormviewerComponentsQuestionTextShort, .freebirdFormviewerComponentsQuestionTextTextInput {
+    width: 100% !important;
 }
